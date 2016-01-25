@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.toplogo {
+  height: 60px;
+  margin: 0px; }
+  .toplogo img {
+    margin: 0px 300px; }
+
+nav {
+  background-color: black;
+  height: 30px;
+  display: flex; }
+  nav ul, nav .telephone {
+    color: #fff;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto; }
+    nav ul li, nav .telephone li {
+      background: #1c7c1c;
+      display: inline-block;
+      text-align: center;
+      padding: 5px;
+      height: 30px;
+      margin: 0px -3px 0px 0px; }
+      nav ul li i, nav .telephone li i {
+        padding: 0 5px; }
+    nav ul li:hover, nav .telephone li:hover {
+      background: #767c76; }
+  nav .telephone {
+    padding: 0px; }
+
+/*# sourceMappingURL=cla.css.map */
