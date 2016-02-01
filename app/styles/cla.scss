@@ -1,0 +1,140 @@
+$buttoncolor: #1c7c1c;
+$buuttonbackcolor: #767c76;
+$fontonelements: #fff; 
+$bgcolor: #1C7CD7;
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.top-logo {
+	// background-color: pink;
+	height: 60px;
+	margin: 0px;
+
+	img {
+		margin: 0px 300px;
+		height: 55px;
+	}
+}
+
+nav {
+	background-color: black;
+	height: 30px;
+	display: flex;
+	
+	ul {
+		color: $fontonelements;
+		list-style: none;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 auto;
+
+		li {
+			background: $buttoncolor; 
+			display: inline-block;
+			text-align: center;
+			padding: 7px;
+			height: 30px;
+			margin: 0px -3px 0px 0px;
+
+			i {
+				padding: 0 5px;
+			}
+		}
+		li:hover {
+			background:$buuttonbackcolor;	 
+		}
+	}
+	.telephone {
+		@extend ul;
+		padding: 0px;
+		 p {
+		 	background: $buuttonbackcolor;
+		 	margin: 0px;
+		 	padding: 6px;
+		 }
+	}
+}
+
+.middle {
+	display: flex;
+	background: $bgcolor;
+	color: $fontonelements;
+	height: 300px;
+
+	.sidetext {
+		width: 48%;
+	}
+
+	#slider {
+		position: relative;
+		width: 350px;
+		height: 350px;
+		margin: 20px auto;
+		padding: 25px;
+		border:  2px solid #eee;
+		
+		span {
+			position: absolute;
+			opacity: 0;
+		
+			&.slider1 {
+				z-index: 4;
+				-webkit-animation: slider1 1s linear 0s infinite normal;
+			}
+
+			@-webkit-keyframes slider1 {
+				0% {opacity: 0}
+				50% {opacity: 1}
+				95% {opacity:1}
+				100% {opacity: 0}
+			}
+
+			// &.slider2 {
+			// 	opacity: 0;
+			// 	z-index: 3;
+			// 	-webkit-animation: slider2 2s linear 2s infinite normal;
+			// }
+
+			// @-webkit-keyframes slider2 {
+			// 	0% {opacity: 0}
+			// 	50% {opacity: 1}
+			// 	100% {opacity: 0}
+			// }
+
+			// &.slider3 {
+			// 	opacity: 0;
+			// 	z-index: 2;
+			// 	-webkit-animation: slider3 1s linear 1s infinite normal;
+			// }
+
+			// @-webkit-keyframes slider3 {
+			// 	0% {opacity: 0}
+			// 	50% {opacity: 1}
+			// 	100% {opacity: 0}
+			// }
+
+			// &.slider4 {
+			// 	opacity: 0; 
+			// 	z-index: 1;
+			// 	-webkit-animation: slider1 2s linear 2s infinite normal;
+			// }
+
+			// @-webkit-keyframes slider4 {
+			// 	0% {opacity: 0}
+			// 	50% {opacity: 1}
+			// 	100% {opacity: 0}
+			// }
+		}	
+	}
+}
+
+.fa-7x {
+	font-size: 15em;
+}

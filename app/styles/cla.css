@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.top-logo {
+  height: 60px;
+  margin: 0px; }
+  .top-logo img {
+    margin: 0px 300px;
+    height: 55px; }
+
+nav {
+  background-color: black;
+  height: 30px;
+  display: flex; }
+  nav ul, nav .telephone {
+    color: #fff;
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 auto; }
+    nav ul li, nav .telephone li {
+      background: #1c7c1c;
+      display: inline-block;
+      text-align: center;
+      padding: 7px;
+      height: 30px;
+      margin: 0px -3px 0px 0px; }
+      nav ul li i, nav .telephone li i {
+        padding: 0 5px; }
+    nav ul li:hover, nav .telephone li:hover {
+      background: #767c76; }
+  nav .telephone {
+    padding: 0px; }
+    nav .telephone p {
+      background: #767c76;
+      margin: 0px;
+      padding: 6px; }
+
+.middle {
+  display: flex;
+  background: #1C7CD7;
+  color: #fff;
+  height: 300px; }
+  .middle .sidetext {
+    width: 48%; }
+  .middle #slider {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 2px solid #eee; }
+    .middle #slider span {
+      position: absolute;
+      opacity: 0; }
+      .middle #slider span.slider1 {
+        z-index: 4;
+        -webkit-animation: slider1 1s linear 0s infinite normal; }
+@-webkit-keyframes slider1 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.fa-7x {
+  font-size: 15em; }
+
+/*# sourceMappingURL=cla.css.map */
